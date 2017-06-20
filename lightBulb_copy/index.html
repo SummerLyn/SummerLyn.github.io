@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Light Bulb Action</title>
+    <link rel="stylesheet" href="styles.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!--- Importing UI jQuery --->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+</head>
+<body>
+
+     <img id="myLightBulb" src="images/lightOff.jpg">
+     <button id="myOnButton"> Click Me </button>
+
+     <script>
+         var isOn = false;
+
+
+        $('#myOnButton').click(function() {
+            if(isOn == false) {
+            $('#myLightBulb').attr('src', 'images/lightOn.jpg');
+            isOn = true;
+            }
+
+            else {
+
+                  isOn = false;
+                $('#myLightBulb').attr('src', 'images/lightOff.jpg');
+
+
+            }
+        });
+
+
+
+     </script>
+   <!--- <script src="scriptstwo.js"></script> --->
+</body>
+</html>
