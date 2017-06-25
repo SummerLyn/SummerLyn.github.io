@@ -2,40 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Light Bulb Action</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>SummerTime Portfolio</title>
+    <link rel="stylesheet" href="javapic_copy/css/style.css">
+    <link rel="stylesheet" href="randomBoxColor_copy/stylesColor.css">
+
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!--- Importing UI jQuery --->
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
 </head>
 <body>
+        <header>Welcome to Summer's Portfolio  <br> <span class="tagline">Let's develop something beautiful</span></header>
+
+        <div id="jumbotron" class="jumbotron">
+            <div>a picture is worth a 1000 words</div>
+        </div>
+        <div class="bottom_jumbo"><a href="javapic_copy/gallery.html">Lightbox Gallery</a></div>
+
+
+
+<br>
 
      <img id="myLightBulb" src="lightBulb_copy/images/lightOff.jpg">
      <button id="myOnButton"> Click Me </button>
 
-     <script>
-         var isOn = false;
 
+ <br>
+ <br>
+ <br>
 
-        $('#myOnButton').click(function() {
-            if(isOn == false) {
-            $('#myLightBulb').attr('src', 'images/lightOn.jpg');
-            isOn = true;
-            }
+    <div class="container">
+        <div class="container1">
+            <div class="smallbox1" id="box1"> </div>
+            <div class="smallbox2" id="box2"> </div>
+            <div class="smallbox3" id="box3"> </div>
+        </div>
 
-            else {
+        <div class="container2">
+            <div class="smallbox4" id="box4"> </div>
+            <div class="smallbox5" id="box5"> </div>
+            <div class="smallbox6" id="box6"> </div>
+        </div>
+    </div>
 
-                  isOn = false;
-                $('#myLightBulb').attr('src', 'lightBulb_copy/images/lightOff.jpg');
+     <button id="boxbutton" onclick="changeColor()">  Change Color </button>
 
+     <script type="text/javascript" src="javapic_copy/js/index_rotate.js"></script>
+     <script src="lightBulb_copy/scripts.js"></script>
+     <script src="randomBoxColor_copy/randomBoxColor.js"></script>
 
-            }
-        });
-
-
-
-     </script>
-   <!--- <script src="scriptstwo.js"></script> --->
 </body>
 </html>
